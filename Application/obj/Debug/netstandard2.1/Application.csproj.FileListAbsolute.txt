@@ -1,0 +1,14 @@
+C:\users\floyd\chris_projects\youjoinus\Application\bin\Debug\netstandard2.1\Application.deps.json
+C:\users\floyd\chris_projects\youjoinus\Application\bin\Debug\netstandard2.1\Application.dll
+C:\users\floyd\chris_projects\youjoinus\Application\bin\Debug\netstandard2.1\Application.pdb
+C:\users\floyd\chris_projects\youjoinus\Application\bin\Debug\netstandard2.1\Domain.dll
+C:\users\floyd\chris_projects\youjoinus\Application\bin\Debug\netstandard2.1\Persistence.dll
+C:\users\floyd\chris_projects\youjoinus\Application\bin\Debug\netstandard2.1\Domain.pdb
+C:\users\floyd\chris_projects\youjoinus\Application\bin\Debug\netstandard2.1\Persistence.pdb
+C:\users\floyd\chris_projects\youjoinus\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
+C:\users\floyd\chris_projects\youjoinus\Application\obj\Debug\netstandard2.1\Application.csproj.CoreCompileInputs.cache
+C:\users\floyd\chris_projects\youjoinus\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
+C:\users\floyd\chris_projects\youjoinus\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
+C:\users\floyd\chris_projects\youjoinus\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
+C:\users\floyd\chris_projects\youjoinus\Application\obj\Debug\netstandard2.1\Application.dll
+C:\users\floyd\chris_projects\youjoinus\Application\obj\Debug\netstandard2.1\Application.pdb

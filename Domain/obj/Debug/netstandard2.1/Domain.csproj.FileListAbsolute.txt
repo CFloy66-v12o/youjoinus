@@ -1,0 +1,9 @@
+C:\users\floyd\chris_projects\youjoinus\Domain\bin\Debug\netstandard2.1\Domain.deps.json
+C:\users\floyd\chris_projects\youjoinus\Domain\bin\Debug\netstandard2.1\Domain.dll
+C:\users\floyd\chris_projects\youjoinus\Domain\bin\Debug\netstandard2.1\Domain.pdb
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.1\Domain.csprojAssemblyReference.cache
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.1\Domain.csproj.CoreCompileInputs.cache
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfoInputs.cache
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfo.cs
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.1\Domain.dll
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.1\Domain.pdb
