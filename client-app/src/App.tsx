@@ -22,7 +22,7 @@ class App extends Component {
       <div>
         <Header as='h2'>
           <Icon name='users' />
-          <Header.Content>You Join Us</Header.Content>
+          <Header.Content>YouJoinUs</Header.Content>
         </Header>
         <List>
           {this.state.values.map((value: any) => (
