@@ -11,7 +11,7 @@ namespace Application.Activities
     public class List
     {
         public class Query : IRequest<List<Activity>> { }
-        public class Handler<Activities> : IRequestHandler<Query, List<Activity>>//responsible for getting all activities from db / returning them
+        public class Handler : IRequestHandler<Query, List<Activity>>//responsible for getting all activities from db / returning them
         {
             private readonly DataContext _context;
             
@@ -29,10 +29,9 @@ namespace Application.Activities
                 var activities = await _context.Activities.ToListAsync();
                 return activities;
             }
+            
         }
+        
 
-        public class Handler
-        {
-        }
     }
 }
