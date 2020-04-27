@@ -1,14 +1,22 @@
 
-appsettings.json
+
 .vscode
-*db
+*.pdb
 *.dll
 
 #Junk Files
 *.DS_Store
 [Tt]humbs.db
 
-
+bin
+obj
+.DS_Store
+*.db
+wwwroot
+publish
+settings.json
+appsettings.json
+.idea
 
 
 
