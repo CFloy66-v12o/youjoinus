@@ -8,9 +8,16 @@ interface IProps {
     activity: IActivity
     createActivity: (activity: IActivity) => void;
     editActivity: (activity: IActivity) => void;
+    submitting: boolean
 }
 
-export const ActivityForm: React.FC<IProps> = ({setEditMode, activity: initialFormState, createActivity, editActivity}) => { //destructured props
+export const ActivityForm: React.FC<IProps> = ({//destructured props
+    setEditMode, 
+    activity: initialFormState, 
+    createActivity, 
+    editActivity, 
+    submitting
+}) => { 
 
 const initializeForm = () => {
     if (initialFormState) {
@@ -88,7 +95,8 @@ const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaEleme
                placeholder='Venue' 
                value={activity.venue} 
                />
-               <Button 
+               <Button
+               loading={submitting} 
                floated='right' 
                positive 
                type='submit' 

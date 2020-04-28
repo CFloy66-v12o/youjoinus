@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 import { Grid } from 'semantic-ui-react'
 import { IActivity } from '../../../app/models/activity'
 import { ActivityList } from './ActivityList'
@@ -14,7 +14,9 @@ interface IProps {
     setSelectedActivity: (activity: IActivity | null) => void;
     createActivity: (activity: IActivity) => void;
     editActivity: (activity: IActivity) => void;
-    deleteActivity: (id: string) => void;
+    deleteActivity: (e: SyntheticEvent<HTMLButtonElement>, id: string) => void;
+    submitting: boolean
+    target: string
 }
 
 export const ActivityDashboard: React.FC<IProps> = ({activities, //destructured props
@@ -25,7 +27,9 @@ export const ActivityDashboard: React.FC<IProps> = ({activities, //destructured 
     setSelectedActivity,
     createActivity,
     editActivity,
-    deleteActivity
+    deleteActivity,
+    submitting,
+    target
 }) => {
     return (
         <Grid>
@@ -34,12 +38,17 @@ export const ActivityDashboard: React.FC<IProps> = ({activities, //destructured 
                 activities={activities} 
                 selectActivity={selectActivity}
                 deleteActivity={deleteActivity}
+                submitting={submitting}
+                target={target}
                 />
             </Grid.Column>
             <Grid.Column width={6}>
                 {selectedActivity && !editMode && (
-                <ActivityDetails activity={selectedActivity} 
-                setEditMode={setEditMode} setSelectedActivity={setSelectedActivity}/>
+                <ActivityDetails 
+                activity={selectedActivity} 
+                setEditMode={setEditMode} 
+                setSelectedActivity={setSelectedActivity}
+                />
                 )}
                 {editMode && 
                 <ActivityForm
@@ -48,6 +57,7 @@ export const ActivityDashboard: React.FC<IProps> = ({activities, //destructured 
                 activity={selectedActivity!} 
                 createActivity={createActivity} 
                 editActivity={editActivity}
+                submitting={submitting}
                 />}
             </Grid.Column>
         </Grid>
