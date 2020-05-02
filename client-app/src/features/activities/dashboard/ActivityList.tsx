@@ -1,22 +1,12 @@
-import React, {useContext, SyntheticEvent}  from 'react'
-import { Card, Button, Segment, Item, Label } from 'semantic-ui-react'
-import { IActivity } from '../../../app/models/activity'
+import React, {useContext}  from 'react'
+import { Button, Segment, Item, Label } from 'semantic-ui-react'
 import ActivityStore from '../../../app/stores/activityStore'
 import { observer } from 'mobx-react-lite'
 
-interface IProps {
-    deleteActivity: (event: SyntheticEvent<HTMLButtonElement>, id: string) => void;
-    submitting: boolean
-    target: string
-}
 
-const ActivityList: React.FC<IProps> = ({//destructured props
-  deleteActivity, 
-  submitting,
-  target
-}) => { 
+const ActivityList: React.FC = () => { 
   const activityStore = useContext(ActivityStore);
-  const { activitiesByDate, selectActivity } = activityStore;
+  const { activitiesByDate, selectActivity, deleteActivity, submitting, target} = activityStore;
     return (
         <Segment clearing>
           <Item.Group divided>
