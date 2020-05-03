@@ -1,5 +1,5 @@
 import React, {useState, FormEvent, useContext, useEffect} from 'react'
-import { Segment, Form, Button } from 'semantic-ui-react'
+import { Segment, Form, Button, Grid } from 'semantic-ui-react'
 import { IActivity } from '../../../app/models/activity'
 import {v4 as uuid } from 'uuid';
 import ActivityStore from '../../../app/stores/activityStore'
@@ -63,7 +63,9 @@ const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaEleme
 };
 
     return (
-       <Segment clearing>
+        <Grid>
+            <Grid.Column width={10} >
+            <Segment clearing>
            <Form onSubmit={handleSubmit} >
                <Form.Input 
                onChange={handleInputChange} 
@@ -119,6 +121,8 @@ const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaEleme
                />
            </Form>
        </Segment>
+            </Grid.Column>
+        </Grid>
     )
 };
  
