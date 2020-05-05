@@ -32,7 +32,7 @@ const [activity, setActivity] = useState<IActivity>({
     description: '',
     date: '',
     city: '',
-    venue: ''
+    venue: '',
 });
 
 useEffect(() => {
@@ -78,7 +78,6 @@ const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaEleme
                name='description' 
                rows={2} 
                placeholder='Description' 
-               
                value={activity.description}
                />
                <Form.Input
@@ -106,6 +105,7 @@ const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaEleme
                placeholder='Venue' 
                value={activity.venue} 
                />
+               
                <Button
                loading={submitting} 
                floated='right' 

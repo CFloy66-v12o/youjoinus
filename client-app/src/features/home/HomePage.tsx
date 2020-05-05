@@ -8,9 +8,9 @@ export const HomePage = () => {
                 <Container text>
                     <Header as='h1' inverted>
                         <Image size='massive' src='/assets/images/logo.png' alt='logo' style={{marginBottom: 12}}/>
-                        Reactivities
+                        YouJoinUs
                     </Header>
-                    <Header as='h2' inverted content='Welcome to Reactivities' />
+                    <Header as='h2' inverted content='Welcome to YouJoinUs!' />
                     <Button as={Link} to='/activities' size='huge' inverted>
                         Take me to the activities!
                     </Button>

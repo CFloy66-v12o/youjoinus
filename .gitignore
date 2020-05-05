@@ -1,8 +1,8 @@
 
 
 .vscode
-*.pdb
-*.dll
+.pdb
+.dll
 
 #Junk Files
 *.DS_Store
