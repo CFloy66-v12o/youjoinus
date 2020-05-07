@@ -8400,11 +8400,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\floyd\\chris_projects\\youjoinus\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\users\\floyd\\chris_projects\\youjoinus\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "c:\\users\\floyd\\chris_projects\\youjoinus\\Application\\Application.csproj",
+      "projectPath": "C:\\users\\floyd\\chris_projects\\youjoinus\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Floyd Family PC\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\floyd\\chris_projects\\youjoinus\\Application\\obj\\",
+      "outputPath": "C:\\users\\floyd\\chris_projects\\youjoinus\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -8424,11 +8424,11 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "c:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj"
+            "C:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj"
             },
-            "c:\\users\\floyd\\chris_projects\\youjoinus\\Persistence\\Persistence.csproj": {
-              "projectPath": "c:\\users\\floyd\\chris_projects\\youjoinus\\Persistence\\Persistence.csproj"
+            "C:\\users\\floyd\\chris_projects\\youjoinus\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\users\\floyd\\chris_projects\\youjoinus\\Persistence\\Persistence.csproj"
             }
           }
         }
