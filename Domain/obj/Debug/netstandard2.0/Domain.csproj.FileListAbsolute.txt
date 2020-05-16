@@ -2,8 +2,8 @@ C:\users\floyd\chris_projects\youjoinus\Domain\bin\Debug\netstandard2.0\Domain.d
 C:\users\floyd\chris_projects\youjoinus\Domain\bin\Debug\netstandard2.0\Domain.dll
 C:\users\floyd\chris_projects\youjoinus\Domain\bin\Debug\netstandard2.0\Domain.pdb
 C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.dll
+C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.pdb
 C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
 C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
 C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
-C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.dll
-C:\users\floyd\chris_projects\youjoinus\Domain\obj\Debug\netstandard2.0\Domain.pdb

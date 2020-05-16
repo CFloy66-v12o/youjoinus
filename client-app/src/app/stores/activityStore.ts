@@ -29,7 +29,7 @@ export class ActivityStore {
       activities[date] = activities[date] ? [...activities[date], activity] : [activity];
       return activities;
     }, {} as { [key: string]: IActivity[] }));
-  };
+  }
 
 
 
@@ -50,7 +50,7 @@ export class ActivityStore {
       });
       console.log(error)
     }
-  };
+  }
 
 
 
@@ -77,15 +77,15 @@ export class ActivityStore {
         console.log(error);
       }
     }
-  };
+  }
 
   @action clearActivity = () => {
     this.activity = null;
-  };
+  }
 
   getActivity = (id: string) => {
     return this.activityRegistry.get(id);
-  };
+  }
 
   @action createActivity = async (activity: IActivity) => {
     this.submitting = true;
@@ -103,7 +103,7 @@ export class ActivityStore {
       toast.error('problem submitting data: please fill out all fields');
       console.log(error.response);
     }
-  };
+  }
 
   @action editActivity = async (activity: IActivity) => {
     this.submitting = true;
@@ -122,7 +122,7 @@ export class ActivityStore {
       toast.error('problem submitting data: please fill out all fields');
       console.log(error.response);
     }
-  };
+  }
 
   @action deleteActivity = async (event: SyntheticEvent<HTMLButtonElement>, id: string) => {
     this.submitting = true;
@@ -141,7 +141,7 @@ export class ActivityStore {
       })
       console.log(error);
     }
-  };
+  }
 
 }
 

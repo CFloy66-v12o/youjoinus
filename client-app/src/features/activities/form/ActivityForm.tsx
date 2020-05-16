@@ -1,21 +1,17 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Segment, Form, Button, Grid } from "semantic-ui-react";
-import {
-  
-  ActivityFormValues,
-} from "../../../app/models/activity";
+import {ActivityFormValues} from "../../../app/models/activity";
 import { v4 as uuid } from "uuid";
 import ActivityStore from "../../../app/stores/activityStore";
 import { observer } from "mobx-react-lite";
 import { RouteComponentProps } from "react-router-dom";
 import { Form as FinalForm, Field } from "react-final-form";
-import { TextInput } from "../../../app/common/form/TextInput";
+import TextInput  from "../../../app/common/form/TextInput";
 import TextAreaInput from "../../../app/common/form/TextAreaInput";
-
 import DateInput from "../../../app/common/form/DateInput";
 import SelectInput from "../../../app/common/form/SelectInput";
-import { category } from "../../../app/common/options/categoryOptions";
-import { combineDateAndTime } from "../../../app/common/util/util";
+import {category}  from "../../../app/common/options/categoryOptions";
+import {combineDateAndTime}  from "../../../app/common/util/util";
 import {combineValidators, isRequired, composeValidators, hasLengthGreaterThan} from 'revalidate';
 
 const validate = combineValidators({
@@ -28,7 +24,7 @@ const validate = combineValidators({
   city: isRequired({message: 'an event city is required'}),
   venue: isRequired({message: 'an event venue is required'}),
   date: isRequired({message: 'an event date is required'}),
-  time: isRequired({message: 'an event time is a required field'})
+  time: isRequired({message: 'an event time is required'})
 })
 
 interface DetailParams {
@@ -37,14 +33,14 @@ interface DetailParams {
 
 export const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
   match,
-  history,
+  history
 }) => {
   const activityStore = useContext(ActivityStore);
   const {
     createActivity,
     editActivity,
     submitting,
-    loadActivity,
+    loadActivity
   } = activityStore;
 
   const [activity, setActivity] = useState(new ActivityFormValues());
@@ -144,8 +140,9 @@ export const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
                 />
                 <Button
                   disabled={loading}
-                  onClick={activity.id ? () => history.push(`/activities/${activity.id}`)
-                          : () => history.push("/activities")}
+                  onClick={activity.id ? () =>
+                     history.push(`/activities/${activity.id}`)
+                     : () => history.push("/activities")}
                   floated="right"
                   type="button"
                   content="Cancel"
@@ -156,7 +153,7 @@ export const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
         </Segment>
       </Grid.Column>
     </Grid>
-  );
-};
+  )
+}
 
 export default observer(ActivityForm);
