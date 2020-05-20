@@ -21,6 +21,13 @@ namespace Persistence
                         UserName = "PipeMan_331",
                         Email = "pipeman_331@dude.com"
                     },
+                    new AppUser
+                    {
+                        DisplayName = "Peanuckle",
+                        UserName = "BigP",
+                        Email = "BigP@BigP.com"
+                    },
+                    
                     
                   
                 };

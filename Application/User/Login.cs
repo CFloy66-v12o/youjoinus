@@ -43,21 +43,19 @@ namespace Application.User
 
             }
 
-            public async Task<User> Handle(Query request,
-                CancellationToken cancellationToken)
+             public async Task<User> Handle(Query request, CancellationToken cancellationToken)
             {
-
-                //handler logic goes here
                 var user = await _userManager.FindByEmailAsync(request.Email);
 
                 if (user == null)
                     throw new RestException(HttpStatusCode.Unauthorized);
 
-                var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
+                var result = await _signInManager
+                    .CheckPasswordSignInAsync(user, request.Password, false);
 
                 if (result.Succeeded)
                 {
-                    //TODO generate token
+                    // TODO: generate token
                     return new User
                     {
                         DisplayName = user.DisplayName,
@@ -66,16 +64,9 @@ namespace Application.User
                         Image = null
                     };
                 }
-                else
-                {
-                    throw new RestException(HttpStatusCode.Unauthorized);
-                }
 
-
-
-
-
-            }
+                throw new RestException(HttpStatusCode.Unauthorized);
+            }   
         }
     }
 

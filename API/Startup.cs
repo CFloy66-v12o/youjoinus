@@ -59,13 +59,8 @@ namespace API
             .AddFluentValidation(cfg => 
             {
                 cfg.RegisterValidatorsFromAssemblyContaining<Create>();
-            })
-
-            .AddFluentValidation(cfg =>
-            {
-                cfg.RegisterValidatorsFromAssemblyContaining<Create>();
             });
-            
+
             services.AddMvc()
             .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 

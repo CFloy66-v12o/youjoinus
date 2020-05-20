@@ -8,6 +8,7 @@ import ActivityDetailedHeader from './details/ActivityDetailedHeader';
 import ActivityDetailedInfo from './details/ActivityDetailedInfo';
 import ActivityDetailedChat from './details/ActivityDetailedChat';
 import ActivityDetailedSidebar from './details/ActivityDetailedSidebar';
+import { RootStoreContext } from '../../app/stores/rootStore';
 
 interface DetailParams {
   id: string;
@@ -19,8 +20,8 @@ const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
   history
 }) => {//========destructured props========
 
-  const activityStore = useContext(ActivityStore);
-  const {activity, loadActivity, loadingInitial} = activityStore;
+  const rootStore = useContext(RootStoreContext);
+  const {activity, loadActivity, loadingInitial} = rootStore.activityStore;
 
   useEffect(() => {
     loadActivity(match.params.id)

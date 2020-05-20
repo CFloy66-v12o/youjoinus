@@ -1789,11 +1789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj",
+      "projectUniqueName": "c:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj",
+      "projectPath": "c:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Floyd Family PC\\.nuget\\packages\\",
-      "outputPath": "C:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\obj\\",
+      "outputPath": "c:\\users\\floyd\\chris_projects\\youjoinus\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1848,7 +1848,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
